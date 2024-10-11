@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url("/P9.png");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  width: 80vw;
+  height: 98vh;
+  background-color: rgb(15, 35, 48);
+  backdrop-filter: blur(19px) saturate(180%);
+  border-radius: 19px;
+  border: 1px solid rgb(0, 0, 0);
+  display: flex;
+}
+
+/* Responsive design for smaller devices */
+@media (max-width: 768px) {
+  .container {
+    width: 95vw;
+    height: 95vh;
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 0; /* Remove border radius for a better fit on smaller screens */
+  }
+}

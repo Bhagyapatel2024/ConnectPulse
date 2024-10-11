@@ -1,0 +1,29 @@
+/* Toast notification customization for error */
+.Toastify__toast--error {
+    background-color: #dc3545; /* Red background for error */
+    color: #fff; /* White text */
+    font-size: 16px; /* Increase font size */
+    font-weight: bold; /* Bold text for better readability */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for pop-up effect */
+    padding: 10px; /* Add padding for spacing */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Positioning the error toast at the bottom */
+.Toastify__toast-container--bottom-right {
+    bottom: 30px; /* Adjust bottom spacing */
+    right: 30px; /* Adjust right spacing */
+    width: auto; /* Dynamic width adjustment */
+    max-width: 200px; /* Limit the maximum width */
+}
+
+/* Close button customization */
+.Toastify__close-button {
+    color: #fff; /* White close button */
+    opacity: 0.8; /* Slightly transparent */
+}
+
+.Toastify__close-button:hover {
+    opacity: 1; /* Full opacity on hover */
+}
